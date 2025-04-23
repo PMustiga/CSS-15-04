@@ -90,8 +90,8 @@ h2 { /* este estilo afecta a todos los h2 de INDEX2.html */
     height: 250px;
     width: 200px;
     position: absolute;
-    top: 500px;   /* de arriba  hacia abajo, osea baja */
-    left: 100px;
+    top: 300px;   /* de arriba  hacia abajo, osea baja */
+    left: 600px;
     z-index: -10;
 
 }
@@ -199,7 +199,7 @@ h2 { /* este estilo afecta a todos los h2 de INDEX2.html */
 
     .claseNav {
         background-color: beige;
-        font-size: 25px;
+        font-size: 30px;
         padding-inline: 0;
         color: brown;
         display: inline;
@@ -210,4 +210,33 @@ h2 { /* este estilo afecta a todos los h2 de INDEX2.html */
 
         background-color: chocolate;
 
+    }
+
+    .claseNav ul{
+        list-style-type: none;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .claseNav li a{
+        text-decoration: none;
+        padding: 6px 11px;
+        display: block;
+    }
+
+    .claseNav >li{
+        float: left;
+
+    }
+    .claseNav li ul{
+        display: none;
+        position: absolute;
+        min-width: 140px;
+
+    }
+
+    .claseNav li:hover>ul{
+        display: block;
+        background-color: orange;
     }
