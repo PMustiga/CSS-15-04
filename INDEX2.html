@@ -363,9 +363,9 @@ las doscientas millas, de conformidad con la ley y
       <h2> Formulario de registro </h2>
 
       <form action="form22-04.html" method="post">
-        <p> <label for="nombre"> Nombre: <input type="text" id="nombre"> </label></p>
+        <p> <label for="nombre"> Nombre: <input type="text" id="nombre" autofocus> </label></p>
         <p> <label for="apellido"> Apellido: <input type="text" id="apellido"> </label></p>
-        <p> <label for="edad"> Edad: <input type="text" id="edad"> </label></p>
+        <p> <label for="edad"> Edad: <input type="number" id="edad" min="18" max="50"> </label></p>
         <p> <label for="Observación"> Observación: <textarea name="Observación" id="Observación"
           style="font-size: 18px; width: 200px; height: 100px;"></textarea> </label></p>
            <p>
@@ -404,9 +404,42 @@ las doscientas millas, de conformidad con la ley y
            </label>
               
           </label>
-
+           
+          <br>
+          <br>
+          <label for="clave"> SELECCIONE CLAVE: 
+            <input minlength="5" maxlength="12" style="font-size:25px" type="password" name="clase" id="clave">
+           </label>
           </p>
-        <button type="submit"> Ingresar</button>
+          <br>
+          <label for="resetear"> RESETEAR: 
+            <input style="font-size:25px" type="reset" name="resetear" id="resetear">
+           </label>
+
+           <label for="file"> INSERTE ARCHIVO: 
+            <input style="font-size:25px" type="file" name="file" id="file">
+           </label>
+
+        <p> <label> Ciclo Actual </label></p>
+        <input style="scale: 1.5;" id="primero" type="radio" name="ciclo" value="primero">
+        <label for="primero"> Primero </label> <br>
+        <input style="scale: 1.5;" id="segundo" type="radio" name="ciclo" value="segundo">
+        <label for="segundo"> Segundo </label> <br>
+        <input style="scale: 1.5;" id="tercero  " type="radio" name="ciclo" value="tercero">
+        <label for="tercero"> Tercero </label> <br>
+        <input style="scale: 1.5;" id="cuarto" type="radio" name="ciclo" value="cuarto">
+        <label for="cuarto"> Cuarto </label> <br>
+        <input style="scale: 1.5;" id="quinto" type="radio" name="ciclo" value="quinto">
+        <label for="quinto"> Quinto </label> <br>
+        <input style="scale: 1.5;" id="sexto" type="radio" name="ciclo" value="sexto">
+        <label for="sexto"> Sexto </label> <br>
+
+        <label for="email"> INGRESE EMAIL: 
+          <input style="font-size:25px" type="email" name="correo" id="email" placeholder="@certus.edu.pe">
+         </label> 
+        <button type="submit"> Ingresar</button> <label for="resetear"> RESETEAR: 
+          <input style="font-size:25px" type="reset" name="resetear" id="resetear">
+         </label>
       </form>
 
 </body>
