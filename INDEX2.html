@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script type="text/javascript" src="SCRIPT1.js"> </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos1.css">
@@ -441,6 +442,34 @@ las doscientas millas, de conformidad con la ley y
           <input style="font-size:25px" type="reset" name="resetear" id="resetear">
          </label>
       </form>
+      <div style="font-size: 30px;"> Contenedor Resultado en Java Script  </div> 
+      <br>
+      <div id="resultado" style="font-size: 30px;"></div>
+        <p> Operación Suma </p>
+      <script>
+        window.alert("Bienvenidos");
+        var valor1=100;
+        var valor2=60;
+        var suma =valor1 + valor2;
+        var resta =valor1 - valor2;
+        var multiplicación =valor1 * valor2;
+        var división =valor1 / valor2;
+        document.write("<br> Fin de página"); //lo coloca al final del script
+
+        console.log("El valor de la suma de ",valor1," con ",valor2,"  es: ",suma);
+        console.log("El valor de la resta de ",valor1," con ",valor2,"  es: ",resta);
+        console.log("El valor del producto de ",valor1," por ",valor2,"  es: ",multiplicación);
+        console.log("El valor de la división de el ",valor1," entre el ",valor2,"  es: ",división);
+        document.getElementById("resultado").innerHTML=
+        " <br> El valor de la suma de "+valor1+" con "+valor2+" es: "+suma + "<br>";
+       </script>
+       <section>
+        <h1 style="font-size: 40px;"> Manipulación del DOM </h1>
+        <p id="ejmDOM1" style="font-size: 25px;"> Este es un texto inicial a aplicar DOM </p>
+        <button onclick="FCambioColor()"> CAMBIO COLOR 
+          
+        </button>
+       </section>
 
 </body>
 </html>
