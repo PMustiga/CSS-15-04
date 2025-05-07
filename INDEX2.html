@@ -364,10 +364,11 @@ las doscientas millas, de conformidad con la ley y
       <h2> Formulario de registro </h2>
 
       <form action="form22-04.html" method="post">
-        <p> <label for="nombre"> Nombre: <input type="text" id="nombre" autofocus> </label></p>
-        <p> <label for="apellido"> Apellido: <input type="text" id="apellido"> </label></p>
-        <p> <label for="edad"> Edad: <input type="number" id="edad" min="18" max="50"> </label></p>
-        <p> <label for="Observación"> Observación: <textarea name="Observación" id="Observación"
+        <p> <label for="nombre"> Nombre: <input type="text" name="nombre" id="nombre" class="datosPersonales"  required > </label></p>
+        <p> <label for="apellido"> Apellido: <input type="text" name="apellido" class="datosPersonales" id="apellido"> </label></p>
+        <p> <label for="edad"> Edad: <input type="number" name="edad" id="edad" class="datosPersonales" min="18" max="50"> </label></p>
+
+        <p> <label for="observacion"> Observación: <textarea name="observacion" id="observacion"
           style="font-size: 18px; width: 200px; height: 100px;"></textarea> </label></p>
            <p>
             <label for="Estatura">  Estatura: 
@@ -379,14 +380,11 @@ las doscientas millas, de conformidad con la ley y
                 <option value="mayor o igual a 1.71m"> mayor o igual a 1.71m </option>
               </select>
            </p>     
-
-           <br>
-           
-           
-
+          
+           <br> 
+                    
            <p>
-
-                        
+                       
             <label > Cursos Llevados </label> 
             <br>
             <input type="checkbox" name="cursos" value="Matemáticas">
@@ -438,6 +436,9 @@ las doscientas millas, de conformidad con la ley y
         <label for="email"> INGRESE EMAIL: 
           <input style="font-size:25px" type="email" name="correo" id="email" placeholder="@certus.edu.pe">
          </label> 
+         <button style="font-size: 30px;" type="button"
+         onclick="FCapturarNombre()"> Copiar nombre a observaciones</button>
+         <br>
         <button type="submit"> Ingresar</button> <label for="resetear"> RESETEAR: 
           <input style="font-size:25px" type="reset" name="resetear" id="resetear">
          </label>
@@ -479,5 +480,17 @@ las doscientas millas, de conformidad con la ley y
         onclick="FCambioTag1()"> CAMBIO POR Tag h2</button>
        </section>
 
+       <section>
+        <h2> Uso de FOR clásico y condicional</h2>
+        <p class="classFOR1" style="font-size: 25px;"> Texto 1 de classFOR1 [0]</p>
+        <p class="classFOR1" style="font-size: 25px;"> Texto 2 de classFOR1 [1]</p>
+        <p class="classFOR1" style="font-size: 25px;"> Texto 3 de classFOR1 [2]</p>
+        <p class="classFOR1" style="font-size: 25px;"> Texto 4 de classFOR1 [3]</p>
+
+        <button style="font-size: 25px;" onclick="FUsoFor1()"> Reporte de classFOR1 </button>
+        <button style="font-size: 25px;" onclick="FEliminarConcat()"> Reporte de classFOR1 </button>
+
+          
+       </section>
 </body>
 </html>
