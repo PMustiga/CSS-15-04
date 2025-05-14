@@ -168,3 +168,65 @@ document.addEventListener("DOMContentLoaded", () => {
     
     });
     });
+
+    function FVerificacion() {
+        let nombre1= prompt("Ingresa tu primer nombre",'');
+        let nombre2= prompt("Ingresa tu segundo nombre",'');
+
+        let longitud1 = nombre1.length;
+        let longitud2 = nombre2.length;
+
+        if(longitud1 < longitud2)
+        {
+            alert("El primer nombre"+nombre1 + "tiene menos letras que el segundo nombre"+ nombre2);
+        }
+        else 
+        {
+            if(longitud1 > longitud2)
+                {
+                 alert("El primer nombre"+nombre1 + "tiene más letras que el segundo nombre"+ nombre2);
+                }
+            
+                else
+                {
+                    alert("El primer nombre:"+nombre1 + " ,tiene la misma cantidad de letras que el nombre 2: "+ nombre2);
+    
+                }
+    
+        }
+    }
+
+    function FNumeroMayor() {
+        
+        let apellido1= prompt("Ingresa tu primer apellido",'');
+        let apellido2= prompt("Ingresa tu segundo apellido",'');
+
+
+        let longitud1 = apellido1.length;
+        let longitud2 = apellido2.length;
+        let textoconcat= "";
+
+        if(longitud1 < longitud2)
+        {
+            alert("El primer apellido"+apellido1+ ",es menor al segundo apellido "+apellido2 );
+            textoconcat=apellido2+apellido1;
+        }
+        else 
+        {
+            if(longitud1 > longitud2)
+                {
+                    alert("El primer apellido"+apellido1+ ",es mayor al segundo apellido "+apellido2 );
+                    textoconcat=apellido1+apellido2;
+
+                }
+            
+                else
+                {
+                    alert("El primer apellido:"+apellido1 + " ,tiene la misma cantidad de letras que el apellido 2: "+ apellido2);
+                    textoconcat=apellido2+apellido1;
+
+                }
+    
+        }
+        alert("Apellidos concatendos:"+textoconcat);
+    }
